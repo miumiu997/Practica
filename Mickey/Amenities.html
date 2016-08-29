@@ -40,7 +40,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><H1 class="NavEventPlanner"> Amenities </H1></li> 
+            <li><H1 class="NavEventPlanner"> Additional Needs </H1></li> 
 
           </ul>
 
@@ -54,26 +54,14 @@
             <div class="row">
                 <div class="row">
                     <div class="row questionDiv">
-                        <h1 class="question">Tell us your amenities needs</h1>  
-                        <div class="radio1">
-                            <input class= "radiobuttonYes" type="radio" name="sleepRoom" id="yes" value="Yes">
-                                <label class= "radiobuttonLabelYes">Yes</label>
-                            </input>
-                        </div>
-                        <div class= "radio2">
-                            <input class= "radiobuttonNo" type="radio" name="SleepRoom"id="no" value="No">
-                                <label class= "radiobuttonLabelNo">No</label>
-                            </input>
-                        </div>  
+                        <h1 class="question">Additional Needs</h1>    
                     </div>
                 </div>
 
                 <!-- This is repeated by the amount of amenities there are --> 
 
                 <form method="get" action="Menus.html">  
-                    <div class="row" id="tableClothPackages" hidden="hidden">
-                        <textarea rows="10" cols="60" placeholder="Describe the amenities needed for the event..."></textarea>
-                    </div>
+                        <textarea rows="10" cols="60" placeholder="Tell us more about your needs specific tablecloths, candles, flowers, face painters etc. We will do our best to find out and suggest the best options in the market for you"></textarea>
  
 
                     <div class="form-group row">
@@ -99,18 +87,6 @@
 
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-       $(document).ready(function() {
-           $("#yes").click(function() {
-               $("#tableClothPackages").show();
-           });
-           $("#no").click(function() {
-               $("#tableClothPackages").hide();
-           });
-           
-       });
-    </script> 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
