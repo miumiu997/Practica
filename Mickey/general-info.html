@@ -25,32 +25,35 @@
 <body>
     <div class="row">
 
-    <nav class="navbar navbar-default">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="home.html"><img class="marriottLogoNav" height="40px" width="60px" src="logos/Marriot%20Logo%20NavBar.png" /></a>
-        </div>
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="home.html"><img class="marriottLogoNav" height="40px" width="60px" src="logos/Marriot%20Logo%20NavBar.png" /></a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><H1 class="NavEventPlanner"> Event Planner </H1></li> 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <H1 class="NavEventPlanner"> Event Planner </H1>
+                    </li>
 
-          </ul>
+                </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li class="SignIn"><a href="SignIn.html">Sign In</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="SignIn"><a href="SignIn.html">Sign In</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
 
-        <div class="container"> 
+        <div class="container">
             <H2 class="Title"> General Information </H2>
             <img class="line" src="logos/GLine.png" />
 
@@ -91,17 +94,66 @@
                             </div>
                         </div>
                         <div class="row">
-                            <label for="first-name" class="col-md-2 col-form-label">*Event Date: </label>
+                            <label for="date" class="col-md-2 col-form-label">*Event Date: </label>
                             <div class="col-md-3">
                                 <input class="form-control" type="date" value="" name="start-date" id="start-date" required>
                             </div>
-                            <label for="last-name" class="col-md-2 col-form-label"></label>
+                            <label for="date" class="col-md-2 col-form-label"></label>
                             <div class="col-md-3">
-                                <input class="form-control" type="date" value="" id="last-name" name="last-name" required>
+                                <input class="form-control" type="date" value="" id="end-date" name="end-date" required>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <div class="form-group row">
+                        <label for="company" class="col-md-2 col-form-label">*Company: </label>
+                        <div class="col-md-3">
+                            <input class="form-control" type="text" value="" name="company" id="comapny" required>
+                        </div>
+                        <label for="typeOfEvent" class="col-md-2 col-form-label">*Type of Event: </label>
+                        <div class="col-md-3">
+                            <select id="typeOfEvent" name="typeOfEvent">
+                                <option value="1">Breakfast</option>
+                                <option value="2">Breakout</option>
+                                <option value="3r">Dinner</option>
+                                <option value="4">Exhibits</option>
+                                <option value="5">Luncheon</option>
+                                <option value="6">Meeting</option>
+                                <option value="7">Office</option>
+                                <option value="8">Reception</option>
+                                <option value="9">Registration</option>
+                                <option value="10">Storage</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="setupOption" class="col-md-2 col-form-label">*Setup Option: </label>
+                        <div class="col-md-3">
+                            <select id="setupOption" name="setupOption">
+                                <option value="1">Setup 1</option>
+                                <option value="2">Setup 2</option>
+                                <option value="3r">Setup 3</option>
+                                <option value="4">Setup 4</option>
+                            </select>
+                        </div>
+                        <label for="reason" class="col-md-2 col-form-label">Reason: </label>
+                        <div class="col-md-3">
+                            <textarea id="reason" name="reason" rows="2" cols="29"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="setupOption" class="col-md-2 col-form-label">Logo: </label>
+                        <div class="col-md-3">
+                            <input type="file" accept="image/jpeg" >
+                        </div>
+                        <label for="reason" class="col-md-4 col-form-label">Do you want us to publish this event?: </label>
+                        <div class="col-md-1">
+                            <input type="checkbox" name="publish" id="publish "value="yes"> Yes </input>
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label for="submit" class="col-md-2 col-form-label"> </label>
                         <div class="col-md-3">
@@ -114,19 +166,12 @@
 
                 </form>
             </div>
-            
-            <div class="row bottomReward">
-                <a href="http://www.marriott.com/rewards/rewards-program.mi"><img class="RewardsLogo" src="logos/Rewards.png"></a>  
-                <H1 class="Rewards"> Remember you can earn Marriott Reward Points with every event you plan at Marriot.</H1>
-
-            </div>
-
         </div>
     </div>
-    
-    <footer> 
-              <img class="marriottLogoFooter" height="40px" width="60px" src="logos/WhiteLogo.png" />
-              <H1 id="footerID">©1996 - 2016 Marriott International, Inc. All rights reserved. Marriott proprietary information.</H1>
+
+    <footer>
+        <img class="marriottLogoFooter" height="40px" width="60px" src="logos/WhiteLogo.png" />
+        <H1 id="footerID">©1996 - 2016 Marriott International, Inc. All rights reserved. Marriott proprietary information.</H1>
 
     </footer>
 
