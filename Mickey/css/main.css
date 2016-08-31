@@ -116,7 +116,7 @@
 .question{
 	font-family: arial; 
 	color: #78BE20;  
-	font-size: 30px;
+	font-size: 160%;
 }
 
 .questionDiv{
@@ -186,8 +186,8 @@
 /* Event Rooms */  
 
 .marriottEventRooms, .marriottRoomSetups{  
-	width: 100%; 
-	height: 100%;
+	width: 65%; 
+	height: 65%;
 }  
 
 .EventRoomLabel, .RoomSetupLabel{  
@@ -206,8 +206,16 @@
 	color:#4E4B48;
 }
 
+.viewinfo2{ 
+    text-align: left;
+	background-color:#F3D54E;  
+	color:#4E4B48;
+    width:100%;
+}
+
 h2{ 
-	font-size: 12px;
+	font-size: 12px; 
+	font-family: arial;
 } 
 
 input[type='checkbox'] {
@@ -360,8 +368,8 @@ input[type='checkbox']:checked {
 }
 
 .ModalRoomSetupImage{
-	width:120%;
-	height:120%;
+	width:160%;
+	height:160%;
 }
 
 .TableclothModalImg{
@@ -399,7 +407,7 @@ input[type='checkbox']:checked {
 
 /*Av Aids*/ 
 .AvAidOptions{ 
-	font-size: 160%;
+	font-size: 120%;
 } 
 
 /*Comments*/ 
@@ -427,8 +435,39 @@ input[type='checkbox']:checked {
 	margin-left: -60%;  
 	margin-top: 2%; 
 
+} 
+
+.ColumnTitle{ 
+	font-size: 120%;  
+	color: #373734;  
+	font-family: arial;
 }
 
+.MenuLabel{ 
+	font-size: 100%;
+}  
+
+.menuPhotos{  
+	width: 60%; 
+	height: 60%;
+}   
+
+.GeneralInfo{  
+	margin-bottom: 30px;
+}
+
+.btnNext{ 
+	margin-top: -60%;
+}
+
+.alignLeft{ 
+	text-align: left;
+} 
+
+.EventinformationTxt{  
+	font-size: 100%; 
+	text-align: left;
+}
 footer{
 	background-color: #373734; 
 	text-align: center; 

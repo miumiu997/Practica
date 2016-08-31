@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <H1 class="NavEventPlanner"> Event Planner </H1>
+                        <H1 class="NavEventPlanner"> General Information </H1>
                     </li>
 
                 </ul>
@@ -53,12 +53,9 @@
             <!-- /.navbar-collapse -->
         </nav>
 
-        <div class="container">
-            <H2 class="Title"> General Information </H2>
-            <img class="line" src="logos/GLine.png" />
-
-            <div class="row">
-                <form method="get" action="EventInformation.html">
+        <div class="GeneralInfo">
+            <div class="row alignLeft">
+                <form method="get" action="EventRooms.html">
 
                     <div class="form-group row">
                         <label for="first-name" class="col-md-2 col-form-label">*First Name: </label>
@@ -84,21 +81,11 @@
 
                     <div class="form-group row">
                         <div class="row">
-                            <label for="start-date" class="col-md-2 col-form-label"></label>
-                            <div class="col-md-3">
-                                <label> *Start Date </label>
-                            </div>
-                            <label for="end-date" class="col-md-2 col-form-label"> </label>
-                            <div class="col-md-3">
-                                <label> *End Date </label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label for="date" class="col-md-2 col-form-label">*Event Date: </label>
+                            <label for="date" class="col-md-2 col-form-label">*Event Start Date: </label>
                             <div class="col-md-3">
                                 <input class="form-control" type="date" value="" name="start-date" id="start-date" required>
                             </div>
-                            <label for="date" class="col-md-2 col-form-label"></label>
+                            <label for="date" class="col-md-2 col-form-label">*Event End Date:</label>
                             <div class="col-md-3">
                                 <input class="form-control" type="date" value="" id="end-date" name="end-date" required>
                             </div>
@@ -128,42 +115,42 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="setupOption" class="col-md-2 col-form-label">*Setup Option: </label>
-                        <div class="col-md-3">
-                            <select id="setupOption" name="setupOption">
-                                <option value="1">Setup 1</option>
-                                <option value="2">Setup 2</option>
-                                <option value="3r">Setup 3</option>
-                                <option value="4">Setup 4</option>
-                            </select>
-                        </div>
                         <label for="reason" class="col-md-2 col-form-label">Reason: </label>
                         <div class="col-md-3">
                             <textarea id="reason" name="reason" rows="2" cols="29"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="setupOption" class="col-md-2 col-form-label">Logo: </label>
-                        <div class="col-md-3">
-                            <input type="file" accept="image/jpeg" >
-                        </div>
-                        <label for="reason" class="col-md-4 col-form-label">Do you want us to publish this event?: </label>
+                        </div> 
+                    </div> 
+                    <div class="form-group row"> 
+                        <label for="reason" class="col-md-4 col-form-label">Do you want your event to be posted in our internal event board? </label>
                         <div class="col-md-1">
                             <input type="checkbox" name="publish" id="publish "value="yes"> Yes </input>
-                        </div>
+                        </div>  
                     </div>
 
                     <div class="form-group row">
-                        <label for="submit" class="col-md-2 col-form-label"> </label>
+                        <label for="setupOption" class="col-md-6 col-form-label">Please provide your logo in a JPG file if you would like your logo to be included </label>
                         <div class="col-md-3">
+                            <input type="file" accept="image/jpeg" value="Please provide jpg format">
                         </div>
-                        <label for="submit" class="col-md-2 col-form-label"></label>
+                    </div>   
+
+                    <div class="form-group row">
+                        <label for="setupOption" class="col-md-2 col-form-label">Name of your event: </label>
                         <div class="col-md-3">
-                            <input type="submit" class="button" value="Next">
+                            <input class="form-control" type="text" value="" name="first-name" id="first-name" required>
                         </div>
+
                     </div>
 
+                        <div class="form-group row">
+                            <label for="submit" class="col-md-2 col-form-label"> </label>
+                            <div class="col-md-3">
+                            </div>
+                            <label for="submit" class="col-md-2 col-form-label"></label>
+                            <div class="col-md-3">
+                                <input type="submit" class="button btnNext" value="Next">
+                            </div>
+                        </div>
                 </form>
             </div>
         </div>
